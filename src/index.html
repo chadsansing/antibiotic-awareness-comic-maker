@@ -9,8 +9,8 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	
-	<script src="http://code.createjs.com/easeljs-0.5.0.min.js"></script> 
-	<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script src="https://code.createjs.com/easeljs-0.5.0.min.js"></script> 
+	<script src="https://code.jquery.com/jquery-1.8.2.js"></script>
 
 	<script src="libs/export_canvas/base64.js" type="text/javascript"></script>
 	<script src="libs/export_canvas/canvas2image.js" type="text/javascript"></script>
@@ -388,7 +388,7 @@
 		// Get the canvas screenshot as PNG
 		var screenshot = Canvas2Image.saveAsPNG(canvas, true, canvas.width, canvas.height, canvas.width, 358);
 
-		// This is a little trick to get the SRC attribute from the generated <img> screenshot
+		// This is a little trick to get the SRC attribute from the generated img screenshot
 		canvas.parentNode.appendChild(screenshot);
 		screenshot.id = "canvasimage";		
 		data = $('#canvasimage').attr('src');
