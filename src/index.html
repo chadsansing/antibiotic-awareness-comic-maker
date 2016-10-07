@@ -47,7 +47,7 @@
 
 		displayThumbnails();
 		displayBin ();
-		displayFrames ();
+		//displayFrames ();
 		displayDroptext ();
 		displaySequencetext ();
 		displayLogo ();
@@ -240,19 +240,19 @@
 		image.src = "images/fp_logo.png";
 	}
 	
-	displayFrames = function () {
-		var image = new Image ();
-
-		image.onload = function (event) {
-			var img = new createjs.Bitmap (event.target);
-			img.y = 90;
-			stage.addChild (img);
-			displayMasks ();
-			stage.update();
-
-		}
-		image.src = "images/frames.jpg";
-	}
+  // displayFrames = function () {
+  //   var image = new Image ();
+  //
+  //   image.onload = function (event) {
+  //     var img = new createjs.Bitmap (event.target);
+  //     img.y = 90;
+  //     stage.addChild (img);
+  //     displayMasks ();
+  //     stage.update();
+  //
+  //   }
+  //   image.src = "images/frames.jpg";
+  // }
 	
 	displayDroptext = function () {
 		var image = new Image ();
@@ -463,6 +463,8 @@ Based on Panel Lottery by Jessica Abel and Matt Madden
 Design and development by Phil Gullberg and Talia Yat
 <br / >
 Remixed for Antibiotics Awareness Day by Mozilla and Mozilla Club Vanuatu
+<br />
+Illustrations by Denny Kaio, published by Wan Smolbag in Vanuatu, in the 2008 comic book "Penislin i no save winim ol sik ia", funded by the World Health Organization.
 </div>
 <div class="credits">
 <br />
